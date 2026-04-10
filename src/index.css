@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #FDFCF0; /* Soft cream */
+  --color-ink: #4A4A4A; /* Soft gray */
+  --color-primary: #FFB7B2; /* Pastel pink */
+  --color-secondary: #B2E2F2; /* Pastel blue */
+  --color-accent: #B2F2BB; /* Pastel green */
+  --color-warning: #F2E2B2; /* Pastel yellow */
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Inter', sans-serif;
+  --font-playful: 'Outfit', 'Inter', sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-ink font-playful;
+  }
+}
+
+.bubbly-card {
+  @apply bg-white rounded-[40px] shadow-[0_10px_0_0_rgba(0,0,0,0.05)] border-4 border-white;
+}
+
+.bubbly-button {
+  @apply rounded-full transition-all duration-200 active:scale-95;
+}
+
+.forest-grid {
+  @apply bg-accent/20 rounded-[48px] p-8 border-8 border-white shadow-inner;
+}
